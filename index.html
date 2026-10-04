@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFTVerse - Coleção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="images/logo.svg" alt="Logo NFTVerse" width="34" height="34">
+      <span>NFT<b>Verse</b></span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+    <nav class="nav">
+      <a href="#">Explorar</a><a href="#">Coleções</a><a href="#">Artistas</a>
+      <a href="#" class="cta">Conectar carteira</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Coleção em destaque</h1>
+    <section class="cardlist" id="cardlist"></section>
+  </main>
+
+  <script>
+    const nfts = [
+      { img: "images/nft-1.jpg", title: "Dual Kit #001", desc: "Um craque, duas camisas: a paixão do clube e o orgulho da seleção.", price: "0.041 ETH", time: "3 days left", author: "Jules Wyvern" },
+      { img: "images/nft-2.svg", title: "Neon Kit #002", desc: "Camisa futurista em azul elétrico e preto neon.", price: "0.085 ETH", time: "5 days left", author: "Aiko Tanaka" },
+      { img: "images/nft-3.svg", title: "Golden Era #003", desc: "Dourado e vinho: a elegância de um clube centenário.", price: "0.120 ETH", time: "1 day left", author: "Luna Reyes" },
+      { img: "images/nft-4.svg", title: "Retro Legend #004", desc: "Listras vermelhas e verdes direto dos anos 70.", price: "0.064 ETH", time: "8 days left", author: "Marco Silva" },
+      { img: "images/nft-5.svg", title: "Ocean Wave #005", desc: "Ondas turquesa e azul-marinho em uma camisa fresca.", price: "0.099 ETH", time: "2 days left", author: "Nina Costa" },
+      { img: "images/nft-6.svg", title: "Dark Phantom #006", desc: "Preto fosco e roxo profundo para jogar à noite.", price: "0.150 ETH", time: "6 days left", author: "Theo Park" }
+    ];
+    const list = document.getElementById("cardlist");
+    list.innerHTML = nfts.map((n, i) => `
+      <article class="card animate__animated animate__fadeInUp" style="animation-delay:${i * 0.15}s">
+        <div class="card-img"><img src="${n.img}" alt="${n.title}" onerror="this.style.display='none'">
+          <div class="overlay"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        </div>
+        <h2>${n.title}</h2>
+        <p class="desc">${n.desc}</p>
+        <div class="info"><span class="price">◆ ${n.price}</span><span class="time">⏱ ${n.time}</span></div>
+        <hr>
+        <div class="author"><span class="avatar">${n.author[0]}</span>Creation of <a href="#">${n.author}</a></div>
+      </article>`).join("");
+  </script>
+</body>
+</html>
