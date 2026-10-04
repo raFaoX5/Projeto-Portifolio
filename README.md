@@ -13,16 +13,16 @@ Projeto de estudo baseado no desafio [NFT preview card component](https://www.fr
 - HTML5 semântico
 - CSS3 (Grid, Flexbox, variáveis CSS, media queries)
 - JavaScript (renderização dos cards)
-- [Animate.css](https://animate.style/) — animações de entrada
-- [Leonardo.ai](https://app.leonardo.ai/) — imagens dos NFTs e logo
+- [Animate.css](https://animate.style/) — animações de entrada 
+- [Leonardo.ai](https://app.leonardo.ai/) — imagens dos NFTs e logo 
 - GitHub + GitHub Pages
 
 ## ✨ Funcionalidades
 - Layout responsivo (mobile e desktop)
-- Hover no card (elevação) e na imagem (overlay + ícone)
-- Animação de entrada escalonada (`fadeInUp`)
-- Header com menu hambúrguer no mobile
-
+- Hover no card (elevação) e na imagem (overlay + ícone) 
+- Animação de entrada escalonada (`fadeInUp`) 
+- Header com menu hambúrguer no mobile  
+ 
 
 ## 👤 Autor
-Rafael e Joao Gabriel — [GitHub](https://github.com/raFaoX5) · [LinkedIn](https://linkedin.com/in/Rafael-Rodrigues)
+Rafael e Joao Gabriel — [GitHub](https://github.com/raFaoX5) · [LinkedIn](https://linkedin.com/in/Rafael-Rodrigues) 
