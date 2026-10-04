@@ -7,7 +7,7 @@ git remote add origin https://github.com/SEU-USUARIO/nft-cardlist.git
 # Fase 1.0
 git checkout -b feature/nft-card
 git commit -am "feat: add NFT preview card with hover effect"
-git checkout main && git merge feature/nft-card
+git checkout main && git merge feature/nft-card 
 
 # Fase 1.1
 git checkout -b feature/card-list
